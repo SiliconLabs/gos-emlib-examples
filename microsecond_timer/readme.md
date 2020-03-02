@@ -1,0 +1,7 @@
+This example illustrates how to use the low-level peripheral library EMLIB from a Gecko OS application to configure and operate a timer to create a single pulse on GOS_GPIO_7 at the push of a button.  NOTE: That there are better ways to do this.  Namely you can use a Compare/Capture channel of the timer and route the result directly to the GPIO.  In this example we control the pin via software.  The objective is to show the use of a timer to create a microsecond delay.
+
+The example is designed for the WGM160P WSTK.  It initializes both buttons.  When PB0 is pressed, the pulse is created using interrupts.  When PB1 is pressed, the pulse is created with an inline delay.
+
+The pin mapping for this GPIO can be found here: [https://docs.silabs.com/gecko-os/4/standard/latest/hardware/silabs/wgm160p/wgm160p-wstk-peripherals#wgm160p-peripheral-connections](https://docs.silabs.com/gecko-os/4/standard/latest/hardware/silabs/wgm160p/wgm160p-wstk-peripherals#wgm160p-peripheral-connections)
+
+> **NOTE:**  This example uses EMLIB from within Gecko OS.  EMLIB should only be used when Gecko OS does not provide the needed API to perform a specific function.  Care must be taken not to create resource conflicts with Gecko OS.  There is no guarantee that code relying directly on emlib will be compatible with future version of Gecko OS.  More information can be found at: [Using EMLIB in a Gecko OS Application](https://docs.silabs.com/gecko-os/4/standard/latest/sdk/development/using-emlib).

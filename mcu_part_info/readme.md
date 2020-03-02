@@ -1,0 +1,1 @@
+This example illustrates how to use the low-level peripheral library EMLIB from a Gecko OS application to read the MCU part information registers.  More information can be found at: [Using EMLIB in a Gecko OS Application](https://docs.silabs.com/gecko-os/4/standard/latest/sdk/development/using-emlib)
