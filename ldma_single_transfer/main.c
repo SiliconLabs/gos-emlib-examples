@@ -20,7 +20,7 @@
 #define TRANSFER_SIZE               (BUFFER_SIZE - 1)
 #define PRINT_HALF_WORDS_PER_LINE   16            
 
-// The memory buffers used for the transger
+// The memory buffers used for the transfer
 uint16_t srcBuffer[BUFFER_SIZE];    // source 
 uint16_t dstBuffer[BUFFER_SIZE];    // destination
 
