@@ -1,1 +1,3 @@
-This example illustrates how to use the low-level peripheral library EMLIB from a Gecko OS application to read the MCU part information registers.  More information can be found at: [Using EMLIB in a Gecko OS Application](https://docs.silabs.com/gecko-os/4/standard/latest/sdk/development/using-emlib)
+This example illustrates how to use the low-level peripheral library EMLIB from a Gecko OS application to read the MCU part information registers.  
+
+> **NOTE:**  This example uses EMLIB from within Gecko OS.  EMLIB should only be used when Gecko OS does not provide the needed API to perform a specific function.  Care must be taken not to create resource conflicts with Gecko OS.  There is no guarantee that code relying directly on emlib will be compatible with future version of Gecko OS.  More information can be found at: [Using EMLIB in a Gecko OS Application](https://docs.silabs.com/gecko-os/4/standard/latest/sdk/development/using-emlib).
